@@ -23,7 +23,7 @@ jobs:
         timeout: 10
         max-score: 100
     - name: Autograding Reporter
-      uses: classroom-resources/autograding-grading-reporter@v1
+      uses: classroom-resources
       env:
         RUN-BACKEND-TESTS_RESULTS: "${{steps.run-backend-tests.outputs.result}}"
       with:
